@@ -139,10 +139,26 @@
 <!-- Import and configure the Firebase SDK -->
 <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
 <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
-<script src="/__/firebase/9.0.1/firebase-app-compat.js"></script>
-<script src="/__/firebase/9.0.1/firebase-auth-compat.js"></script>
-<script src="/__/firebase/9.0.1/firebase-database-compat.js"></script>
-<script src="/__/firebase/init.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAOU34bHRQFsDCePhlAjSVJGy0ITFJzZUY",
+    authDomain: "fir-quickstart-efb6b.firebaseapp.com",
+    databaseURL: "https://fir-quickstart-efb6b-default-rtdb.firebaseio.com",
+    projectId: "fir-quickstart-efb6b",
+    storageBucket: "fir-quickstart-efb6b.appspot.com",
+    messagingSenderId: "845697549321",
+    appId: "1:845697549321:web:18ca5e66ab1bc2160f24d8"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
 <script src="scripts/main.js"></script>
 </body>
